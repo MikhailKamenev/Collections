@@ -42,4 +42,9 @@ public class Passport {
     public LocalDate getLocalDate() {
         return localDate;
     }
+
+    @Override
+    public String toString() {
+        return "Номер: "+number+". Имя: " + name +". Срок действия: "+ localDate;
+    }
 }
