@@ -18,12 +18,12 @@ public class Main {
         Product chicken = new Product("Курица", 180, 2);
         ProductList fruits = new ProductList();
         ProductList meat = new ProductList();
-        meat.addProduct(pork);
-        meat.addProduct(chicken);
-        fruits.addProduct(banana);
-        fruits.addProduct(apple);
-        fruits.addProduct(orange);
-        fruits.addProduct(grape);
+        meat.putProduct(pork,2);
+        meat.putProduct(chicken,0);//проверка что дефолтное значение количества =1
+        fruits.putProduct(banana,5);
+        fruits.putProduct(apple,3);
+        fruits.putProduct(orange,3);
+        fruits.putProduct(grape,2);
         System.out.println(fruits);
         System.out.println(meat);
         Recipe fruitSalad = new Recipe("Фруктовый салат", fruits);

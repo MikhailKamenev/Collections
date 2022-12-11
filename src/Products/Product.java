@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Product {
     private final String name;
     private final double price;
-    private final int amount;
+//    private int amount;
     private boolean bought;
 
     public Product(String name, double price, int amount) {
@@ -16,7 +16,7 @@ public class Product {
         }else {
         this.name = name;
         this.price = price;
-        this.amount = amount;
+//        this.amount = amount;
         this.bought = false;
         }
     }
@@ -27,9 +27,9 @@ public class Product {
     public double getPrice() {
         return price;
     }
-    public int getAmount() {
-        return amount;
-    }
+//    public int getAmount() {
+//        return amount;
+//    }
     public boolean isBought() {
         return bought;
     }
@@ -53,6 +53,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return name+". Количество - "+amount+" кг. Статус: "+(this.isBought()?"куплен":"не куплен");
+        return name+". Статус: "+(this.isBought()?"куплен":"не куплен. Количество ");
     }
 }

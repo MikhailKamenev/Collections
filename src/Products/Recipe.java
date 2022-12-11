@@ -13,7 +13,7 @@ public class Recipe {
         }
         this.name = name;
         this.productList = productList;
-        this.cost = productList.totalPrice();
+        this.cost = productList.listPrice();
     }
 
     public String getName() {
